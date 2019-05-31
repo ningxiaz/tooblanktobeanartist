@@ -6,19 +6,19 @@
   <title>Too ___ to be an artist</title>
 
   <script type="text/javascript">
-  	var strings = ['Too smart to be an artist', 
-  				   'Too normal to be an artist', 
-  				   'Too short to be an artist', 
+  	var strings = ['Too normal to be an artist', 
   				   'Too dumb to be an artist', 
   				   'Too conservative to be an artist',
   				   'Too ugly to be an artist',
   				   'Too coward to be an artist',
+  				   'Too indecisive to be an artist',
   				   'Too stoic to be an artist', 
   				   'Too strategic to be an artist',
   				   'Too spoiled to be an artist',
   				   'Too boring to be an artist', 
   				   'Too obedient to be an artist',
   				   'Too tortured to be an artist',
+  				   'Too smart to be an artist',
   				   'Too wordly to be an artist',
   				   'Too numb to be an artist',
   				   'Too masculine to be an artist',
@@ -26,15 +26,17 @@
   				   'Too uptight to be an artist',
   				   'Too competitive to be an artist',
   				   'Too ambitious to be an artist',
+  				   'Too short to be an artist', 
   				   'Too fragile to be an artist',
   				   'Too mature to be an artist',
   				   'Too stable to be an artist',
+  				   'Too paranoid to be an artist',
   				   'Too logical to be an artist',
   				   'Too feminine to be an artist',
   				   'Too fanatic to be an artist',
   				   'Too jaded to be an artist'];
 
-  	var colors = ['yellow', 'red', 'fuchsia', 'white', 'cyan', 'magenta', 'lawngreen', 'mediumslateblue'];
+  	var colors = ['yellow', 'red', 'fuchsia', '#2B73FF', 'cyan', 'magenta', 'lawngreen', 'hotpink'];
 
   	var textElement = null;
   	var body;
@@ -67,7 +69,7 @@
 
   			
   			textElement.innerHTML = string;
-  			textElement.setAttribute('style', 'left: ' + x + 'px; top: ' + y + 'px; ' + 'text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px ' + color + ', 0 0 30px ' + color + ', 0 0 40px ' + color + ', 0 0 55px ' + color + ', 0 0 120px ' + color + ';');
+  			textElement.setAttribute('style', 'left: ' + x + 'px; top: ' + y + 'px; ' + 'text-shadow: 0 0 5px ' + color + ', 0 0 10px ' + color + ', 0 0 20px ' + color + ', 0 0 30px ' + color + ', 0 0 90px ' + color + ', 0 0 120px ' + color + ';');
 
   			i++;
   			j++;
@@ -77,6 +79,7 @@
   		};
 
   		window.setInterval(change, 3500);
+  		//change();
   		
   	};
 
